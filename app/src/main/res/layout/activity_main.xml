@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#EBEBF1"
+    tools:context="com.example.abhinavgianey.picturethis.MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:paddingTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:src="@drawable/picturethis" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#002C7D"
+        android:text="Picture This"/>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <Button
+            android:background="@null"
+            android:text="Sign Up"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onSignUpClick"/>
+        <Button
+            android:background="@null"
+            android:text="Log In"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLogInClick"/>
+    </LinearLayout>
+</RelativeLayout>
