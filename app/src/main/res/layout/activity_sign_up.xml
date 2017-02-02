@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Sign up via Facebook"
+        android:textColor="#002C7D"
         android:textAllCaps="false"
         android:background="@null"
         android:textSize="20dp"
@@ -16,7 +17,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:hint="First Name"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:paddingLeft="8dp"
@@ -26,7 +27,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="Last Name"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:paddingLeft="8dp"
@@ -39,13 +40,24 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/maleButton"
+            android:background="@drawable/bordered_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Male"/>
+            android:layout_marginRight="0dp"
+            android:text="Male"
+            android:textColor="#FFFFFF"
+            android:onClick="onMaleClick"/>
         <Button
+            android:id="@+id/femaleButton"
+            android:background="@drawable/bordered_button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Female"/>
+            android:layout_marginLeft="0dp"
+            android:text="Female"
+            android:textColor="#002C7D"
+            android:color="#FFFFFF"
+            android:onClick="onFemaleClick"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -79,6 +91,8 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bordered_button5"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 </LinearLayout>

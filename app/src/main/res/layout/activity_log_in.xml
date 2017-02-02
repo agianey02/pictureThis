@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Log In via Facebook"
+        android:textColor="#002C7D"
         android:background="@null"
         android:textSize="12dp"
         android:textAllCaps="false"
@@ -45,13 +46,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
+        android:background="@drawable/bordered_button5"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
     <Button
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
+        android:background="@drawable/bordered_button6"
+        android:textColor="#002C7D"
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
