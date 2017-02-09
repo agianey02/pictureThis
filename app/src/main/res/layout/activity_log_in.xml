@@ -12,6 +12,7 @@
         android:background="@null"
         android:paddingBottom="30dp"/>
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -22,6 +23,7 @@
         android:paddingRight="8dp"
         android:layout_marginBottom="10dp"/>
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -30,6 +32,13 @@
         android:paddingLeft="8dp"
         android:background="@drawable/rounded_edittext"
         android:paddingRight="8dp"/>
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Incorrect. Please try again."
+        android:textColor="#CC0000"/>
     <Button
         android:paddingTop="20dp"
         android:layout_width="wrap_content"
@@ -46,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
+        android:onClick="onLogInClick"
         android:background="@drawable/bordered_button5"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
